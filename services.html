@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AceTiyo Services - Complete Academic Management | Online School Success</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Comprehensive academic services from AceTiyo LTD. Full academic management, daily learning support, college prep, NCAA eligibility, and sports agency services for online education success.">
+    <meta name="keywords" content="academic management services, online school support, college preparation, NCAA eligibility, sports agency, virtual high school services, student athlete support">
+    <meta name="author" content="AceTiyo LTD">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://acetiyo.com/services.html">
+    <meta property="og:title" content="AceTiyo Services - Complete Academic Management">
+    <meta property="og:description" content="Full academic management, daily learning support, college prep, and NCAA pathways. Complete ownership of your educational journey.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- link to javascript file script.js --> 
+    <script src="script.js" defer></script>
+    
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#333333',
+                        secondary: '#f20612',
+                        accent: '#c90619',
+                        dark: '#0f172a',
+                        light: '#f8fafc',
+                        conflict: '#f7e7e6',
+                        conflictDark: '#f1d4d3',
+                        gold: '#ffd700',
+                        success: '#10b981',
+                        fadedRed: '#fff9f9'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'display': ['Playfair Display', 'serif']
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                        'bounce-slow': 'bounce 3s infinite',
+                        'pulse-slow': 'pulse 3s infinite',
+                        'wiggle': 'wiggle 1s ease-in-out infinite',
+                        'zoom': 'zoom 0.5s ease-out'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+       
+
+</head>
+<body class="font-sans antialiased bg-white overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300" id="navbar">
+        <div class="bg-white/80 backdrop-blur-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex items-center space-x-3">
+                        <div class="logo w-12 h-12 flex items-center justify-center">
+                            <img src="Acetiyo_logo-removebg.png" alt="logo">
+                        </div>
+                        <div>
+                            <span class="font-display text-2xl font-bold gradient-text">AceTiyo</span>
+                            <div class="text-xs text-gray-500">LTD</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hidden lg:flex items-center space-x-8">
+                        <a href="index.html" class="text-gray-700  hover:text-primary font-semibold transition-all duration-300 hover:scale-105">Home</a>
+                        <a href="about.html" class="text-gray-700 hover:text-primary font-semibold transition-all duration-300 hover:scale-105">About</a>
+                        <a href="services.html" class="text-gray-700 hover:text-primary font-semibold transition-all duration-300 hover:scale-105">Services</a>
+                        <a href="enrollment.html" class="text-gray-700 hover:text-primary font-semibold transition-all duration-300 hover:scale-105">Enrollment</a>
+                        <a href="pricing.html" class="text-gray-700 hover:text-primary font-semibold transition-all duration-300 hover:scale-105">Pricing</a>
+                        <a href="contact.html" class="text-gray-700 hover:text-primary font-semibold transition-all duration-300 hover:scale-105">Contact</a>
+                    </div>
+                    
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="https://wa.me/254718239608?text=Hello%20Acetiyo,%20I%20was%20visiting%20your%20website%20and%20...." 
+                    class="flex items-center space-x-2 text-green-600 hover:text-green-700 transition-all duration-300 hover:scale-105 bg-green-50 px-3 py-2 rounded-lg" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                        <i class="ri-whatsapp-fill text-xl"></i>
+                        <span class="font-semibold">WhatsApp</span>
+                    </a>
+
+                    <button onclick="window.location.href='enrollment.html#enroll'" 
+                        class="cta-button text-white px-8 py-3 rounded-xl font-bold text-lg shadow-lg">
+                        Enroll Now
+                    </button>
+                </div>
+
+                    
+                    <button class="lg:hidden" id="mobile-menu-btn">
+                        <i class="ri-menu-line text-2xl text-gray-700"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden glass" id="mobile-menu">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="#home" class="block px-3 py-3 text-gray-700 hover:text-primary font-semibold">Home</a>
+                <a href="about.html" class="block px-3 py-3 text-gray-700 hover:text-primary font-semibold">About</a>
+                <a href="services.html" class="block px-3 py-3 text-gray-700 hover:text-primary font-semibold">Services</a>
+                <a href="enrollment.html" class="block px-3 py-3 text-gray-700 hover:text-primary font-semibold">Enrollment</a>
+                <a href="pricing.html" class="block px-3 py-3 text-gray-700 hover:text-primary font-semibold">Pricing</a>
+                <a href="contact.html" class="block px-3 py-3 text-gray-700 hover:text-primary font-semibold">Contact</a>
+                <div class="pt-4 border-t border-gray-200">
+                    <a href="https://wa.me/254718239608?text=Hello%20Acetiyo,%20I%20was%20visiting%20your%20website%20and%20...." class="flex items-center space-x-2 px-3 py-3 text-green-600">
+                        <i class="ri-whatsapp-fill text-xl"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <button onclick="window.location.href='enrollment.html#enroll'" 
+                        class="cta-button text-white px-8 py-3 rounded-xl font-bold text-lg shadow-lg">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section class="hero-bg hero-services min-h-[70vh] flex items-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-transparent"></div>
+    <div class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+        <div class="text-center">
+            <div data-aos="fade-up">
+                <!-- Tagline Badge -->
+                <div class="inline-flex items-center space-x-2 bg-white/20 text-white px-6 py-3 rounded-full text-sm font-bold mb-6">
+                    <i class="ri-service-fill text-gold"></i>
+                    <span>Premium Services</span>
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="text-4xl lg:text-6xl font-display font-bold text-white mb-6">
+                    Complete Academic <span class="text-conflictDark">Ownership</span>
+                </h1>
+
+                <!-- Description -->
+                <p class="text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-8">
+                    End-to-end academic management services that guarantee success. We don't just facilitate—we own your entire educational journey.
+                </p>
+
+                <!-- Breadcrumbs -->
+                <div class="flex justify-center items-center gap-2 text-white/80 text-sm mb-8">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <span class="mx-1">•</span>
+                    <span class="text-conflictDark">Services</span>
+                </div>
+
+                <!-- Key Points -->
+                <div class="flex flex-wrap justify-center items-center gap-8 text-white/80">
+                    <div class="flex items-center space-x-2">
+                        <i class="ri-star-fill text-gold text-xl"></i>
+                        <span class="font-semibold">Top-Tier Expertise</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="ri-shield-check-line text-success text-xl"></i>
+                        <span class="font-semibold">Guaranteed Success</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="ri-book-open-line text-secondary text-xl"></i>
+                        <span class="font-semibold">Comprehensive Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Core Services -->
+    <section class="py-20 bg-fadedRed">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-display font-bold text-dark mb-6">
+                    Our <span class="gradient-text">Comprehensive</span> Services
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    From academic roadmapping to college transitions, we provide complete ownership of your educational journey.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Full Academic Management -->
+                <div class="service-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-xl flex items-center justify-center mb-6">
+                        <i class="ri-file-list-3-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Full Academic Management</h3>
+                    <p class="text-gray-600 mb-6">Complete oversight of your academic journey from course selection to graduation clearance.</p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center space-x-3">
+                            <i class="ri-check-line text-primary"></i>
+                            <span>Comprehensive graduation requirement guidance</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="ri-check-line text-primary"></i>
+                            <span>Real-time credit tracking and monitoring</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="ri-check-line text-primary"></i>
+                            <span>Graduation clearance handling</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="ri-check-line text-primary"></i>
+                            <span>Course scheduling optimization</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-primary/5 rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <span class="font-semibold text-dark">Annual Management</span>
+                            <span class="text-2xl font-bold text-primary">$3,500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Daily Learning Support -->
+                <div class="service-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-xl flex items-center justify-center mb-6">
+                        <i class="ri-customer-service-2-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Daily Learning Support</h3>
+                    <p class="text-gray-600 mb-6">Seamless day-to-day management ensuring uninterrupted learning experiences.</p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center space-x-3">
+                            <i class="ri-check-line text-secondary"></i>
+                            <span>Test and assignment unlocking</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="ri-check-line text-secondary"></i>
+                            <span>Teacher communication coordination</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="ri-check-line text-secondary"></i>
+                            <span>Technical issue troubleshooting</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="ri-check-line text-secondary"></i>
+                            <span>Platform navigation assistance</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-secondary/5 rounded-lg">
+                        <div class="text-center">
+                            <span class="font-semibold text-dark">Included in Academic Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- College Pathway Preparation -->
+                <div class="service-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-xl flex items-center justify-center mb-6">
+                        <i class="ri-graduation-cap-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">College Pathway Preparation</h3>
+                    <p class="text-gray-600 mb-6">Strategic preparation for college admissions and NCAA eligibility pathways.</p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center space-x-3">
+                            <i class="ri-check-line text-accent"></i>
+                            <span>NCAA eligibility support and guidance</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="ri-check-line text-accent"></i>
+                            <span>College admissions strategy development</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="ri-check-line text-accent"></i>
+                            <span>Elite coaching connections</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="ri-check-line text-accent"></i>
+                            <span>University recruitment facilitation</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-accent/5 rounded-lg">
+                        <div class="text-center">
+                            <span class="font-semibold text-dark">Integrated Service Package</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="py-20 bg-gradient-to-r from-light to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-display font-bold text-dark mb-6">
+                    Specialized <span class="gradient-text">Services</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Tailored solutions for specific academic and athletic goals
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Sports Agency -->
+                <div class="feature-card p-6 rounded-xl text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-trophy-line text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark mb-3">Sports Agency & Pathways</h3>
+                    <p class="text-gray-600 text-sm mb-4">Direct connections to elite coaches and university athletic programs.</p>
+                    <div class="text-primary font-bold">Varies by Program</div>
+                </div>
+
+                <!-- SAT Prep -->
+                <div class="feature-card p-6 rounded-xl text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-gradient-to-r from-secondary to-accent rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-book-open-line text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark mb-3">SAT Preparation</h3>
+                    <p class="text-gray-600 text-sm mb-4">Comprehensive SAT prep with expert instructors and proven strategies.</p>
+                    <div class="text-secondary font-bold">$60 per Hour</div>
+                </div>
+
+                <!-- AP Classes -->
+                <div class="feature-card p-6 rounded-xl text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-gradient-to-r from-accent to-primary rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-medal-line text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark mb-3">AP Classes</h3>
+                    <p class="text-gray-600 text-sm mb-4">Advanced Placement courses for college-level academic rigor.</p>
+                    <div class="text-accent font-bold">$295 per Credit</div>
+                </div>
+
+                <!-- 1:1 Tutoring -->
+                <div class="feature-card p-6 rounded-xl text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-user-star-line text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark mb-3">1:1 Teacher Sessions</h3>
+                    <p class="text-gray-600 text-sm mb-4">Personalized instruction and mentoring with certified teachers.</p>
+                    <div class="text-primary font-bold">Included</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Process -->
+    <section class="py-20 bg-fadedRed">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-display font-bold text-dark mb-6">
+                    How We <span class="gradient-text">Deliver</span> Excellence
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Our proven process ensures seamless academic management and guaranteed success
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-20 h-20 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">01</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Assessment & Planning</h3>
+                    <p class="text-gray-600">
+                        We analyze your current academic status, goals, and create a comprehensive roadmap for success with clear timelines and milestones.
+                    </p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 bg-gradient-to-r from-secondary to-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">02</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Active Management</h3>
+                    <p class="text-gray-600">
+                        Our team takes complete ownership of your academic journey, handling all communications, scheduling, and administrative tasks daily.
+                    </p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-20 h-20 bg-gradient-to-r from-accent to-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">03</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Success & Transition</h3>
+                    <p class="text-gray-600">
+                        We ensure graduation requirements are met and facilitate smooth transitions to college or career pathways with continued support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Benefits -->
+    <section class="py-20 bg-gradient-to-r from-light to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-display font-bold text-dark mb-6">
+                    Partner <span class="gradient-text">Benefits</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Exclusive advantages for AceTiyo students
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-calendar-check-line text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark mb-3">Live Student/Parent Orientation</h3>
+                    <p class="text-gray-600 text-sm">Comprehensive onboarding process ensuring smooth transition into online learning.</p>
+                </div>
+                
+                <div class="feature-card p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-gradient-to-r from-secondary to-accent rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-lightbulb-line text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark mb-3">Ability & Passion-Based Electives</h3>
+                    <p class="text-gray-600 text-sm">Courses tailored to individual talents, interests, and career aspirations.</p>
+                </div>
+                
+                <div class="feature-card p-6 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-gradient-to-r from-accent to-primary rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-time-line text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark mb-3">Custom Academic Scheduling</h3>
+                    <p class="text-gray-600 text-sm">Flexible scheduling built around student goals, commitments, and learning preferences.</p>
+                </div>
+                
+                <div class="feature-card p-6 rounded-xl" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-award-line text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark mb-3">AP/Honors Course Catalog</h3>
+                    <p class="text-gray-600 text-sm">Access to college-level rigor across multiple disciplines with expert support.</p>
+                </div>
+                
+                <div class="feature-card p-6 rounded-xl" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-12 h-12 bg-gradient-to-r from-secondary to-accent rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-user-heart-line text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark mb-3">Weekly 1:1 Teacher Meetings</h3>
+                    <p class="text-gray-600 text-sm">Regular personalized academic support with on-demand sessions available.</p>
+                </div>
+                
+                <div class="feature-card p-6 rounded-xl" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-12 h-12 bg-gradient-to-r from-accent to-primary rounded-lg flex items-center justify-center mb-4">
+                        <i class="ri-football-line text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-dark mb-3">Coach Access Programs</h3>
+                    <p class="text-gray-600 text-sm">Direct connections with top-tier university athletic programs and elite coaches.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Comparison -->
+    <section class="py-20 bg-fadedRed">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-display font-bold text-dark mb-6">
+                    Why Choose <span class="gradient-text">AceTiyo</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Compare our comprehensive ownership model with traditional services
+                </p>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-2xl shadow-lg overflow-hidden" data-aos="fade-up">
+                    <thead class="bg-gradient-to-r from-primary to-secondary text-white">
+                        <tr>
+                            <th class="px-6 py-4 text-left font-semibold">Service Features</th>
+                            <th class="px-6 py-4 text-center font-semibold">Traditional Consultants</th>
+                            <th class="px-6 py-4 text-center font-semibold">AceTiyo LTD</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-gray-900">Academic Management</td>
+                            <td class="px-6 py-4 text-center text-red-500">Limited Guidance</td>
+                            <td class="px-6 py-4 text-center text-green-500 font-bold">Complete Ownership</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">Daily Support</td>
+                            <td class="px-6 py-4 text-center text-red-500">Minimal</td>
+                            <td class="px-6 py-4 text-center text-green-500 font-bold">24/7 Management</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-gray-900">Success Guarantee</td>
+                            <td class="px-6 py-4 text-center text-red-500">No Guarantee</td>
+                            <td class="px-6 py-4 text-center text-green-500 font-bold">98% Success Rate</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 font-medium text-gray-900">College Pathways</td>
+                            <td class="px-6 py-4 text-center text-yellow-500">Basic Advice</td>
+                            <td class="px-6 py-4 text-center text-green-500 font-bold">Elite Network Access</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-gray-900">NCAA Support</td>
+                            <td class="px-6 py-4 text-center text-red-500">Not Included</td>
+                            <td class="px-6 py-4 text-center text-green-500 font-bold">Full Certification</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-display font-bold text-white mb-6">
+                    Ready to Experience Complete Ownership?
+                </h2>
+                <p class="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
+                    Stop settling for partial support. Choose comprehensive academic ownership that guarantees your success from day one.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="enrollment.html" class="bg-yellow-400 text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-white transition-colors">
+                        Get Started Today
+                    </a>
+                    <a href="contact.html" class="glass text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/20 transition-colors">
+                        Schedule Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer class="bg-dark text-white py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="logo w-12 h-12 flex items-center justify-center">
+                            <img src="Acetiyo logo.png" alt="logo">
+                        </div>
+                        <div>
+                            <span class="font-display text-2xl font-bold gradient-text">AceTiyo</span>
+                            <div class="text-xs text-gray-400">LTD</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">Premier affiliate of accredited American online schools, architecting academic success for students worldwide.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-gold">Services</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="services.html" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">Academic Management</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">Daily Learning Support</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">College Preparation</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">NCAA Eligibility</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">Sports Agency</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-gold">Company</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">About Us</a></li>
+                        <li><a href="enrollment.html" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">How It Works</a></li>
+                        <li><a href="pricing.html" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">Pricing</a></li>
+                        <li><a href="#success-stories" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">Success Stories</a></li>
+                        <li><a href="contact.html#contact" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">Contact Form</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-gold">Contact</h3>
+                    <div class="space-y-4 text-gray-400">
+                        <div class="flex items-center space-x-3 group cursor-pointer">
+                            <i class="ri-whatsapp-fill text-green-500 text-xl group-hover:scale-110 transition-transform"></i>
+                            <div>
+                                <div class="group-hover:text-white transition-colors">+254 718 239 608</div>
+                                <div class="text-xs">Available 24/7</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 group">
+                            <i class="ri-mail-line text-primary text-xl"></i>
+                            <div>
+                                <div class="group-hover:text-white transition-colors">acetiyocompanyltd@gmail.com</div>
+                                <div class="text-xs">Quick Response</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 group">
+                            <i class="ri-time-line text-accent text-xl"></i>
+                            <div>
+                                <div class="group-hover:text-white transition-colors">Mon-Fri: 8AM-6PM</div>
+                                <div class="text-xs">Sat: 9AM-4PM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="grid md:grid-cols-2 gap-4 items-center">
+                    <p class="text-gray-400 text-sm">© 2025 AceTiyo LTD. All rights reserved.</p>
+                    <div class="flex space-x-6 text-sm text-gray-400 md:justify-end">
+                        <a href="terms.html#privacy" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="terms.html#service" class="hover:text-white transition-colors">Terms of Service</a>
+                        <a href="terms.html#cookies" class="hover:text-white transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+                <div class="mt-4 text-center text-gray-500 text-sm">
+                    Website created by 
+                    <a href="https://techmetris.com" target="_blank" class="style: underline hover:text-white transition-colors">Techmetris Web Designs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Customer Support Button -->
+    <div id="support-wrapper" class="fixed bottom-6 right-6 flex flex-col items-end space-y-2 z-50">
+        <!-- Hidden contact icons -->
+        <a id="call-button" href="tel:+254718239608"
+        class="contact-icon w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg opacity-0 pointer-events-none transform translate-y-4 transition-all duration-300">
+            <i class="ri-phone-line text-xl"></i>
+        </a>
+        <a id="whatsapp-button" href="https://wa.me/+254718239608" target="_blank" rel="noopener noreferrer"
+        class="contact-icon w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg opacity-0 pointer-events-none transform translate-y-4 transition-all duration-300">
+            <i class="ri-whatsapp-line text-xl"></i>
+        </a>
+
+        <!-- Main support button -->
+        <div id="support-button"
+            class="w-14 h-14 bg-primary hover:bg-red-700 rounded-full flex items-center justify-center cursor-pointer shadow-lg transition-all duration-300 hover:scale-110">
+            <i class="ri-headphone-line text-white text-2xl"></i>
+        </div>
+    </div>
+    <!-- Back to Top Button -->
+        <button id="back-to-top" 
+            type="button"
+            class="fixed bottom-24 right-6 w-12 h-12 bg-primary rounded-full items-center justify-center shadow-lg hover:bg-secondary transition-colors z-[9999] cursor-pointer">
+            <i class="ri-arrow-up-line text-white"></i>
+        </button>
+
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Back to top button
+        const backToTopBtn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTopBtn.classList.remove('hidden');
+                backToTopBtn.classList.add('flex');
+            } else {
+                backToTopBtn.classList.add('hidden');
+                backToTopBtn.classList.remove('flex');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+              // Customer support button functionality
+            document.getElementById('support-button').addEventListener('click', () => {
+                document.querySelectorAll('.contact-icon').forEach(icon => {
+                    icon.classList.toggle('show');
+                });
+            });
+
+    </script>
+</body>
+</html>
