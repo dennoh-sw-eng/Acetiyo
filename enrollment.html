@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Now - AceTiyo Services | Start Your Academic Journey</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Enroll with AceTiyo LTD for comprehensive academic management services. Complete your enrollment in minutes and start your journey to academic success.">
+    <meta name="keywords" content="enroll online school, academic management enrollment, online education registration, student enrollment form">
+    <meta name="author" content="AceTiyo LTD">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://acetiyo.com/enrollment.html">
+    <meta property="og:title" content="Enroll Now - AceTiyo Services">
+    <meta property="og:description" content="Start your academic journey with AceTiyo's comprehensive management services. Complete enrollment and unlock your potential.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#333333',
+                        secondary: '#f20612',
+                        accent: '#c90619',
+                        dark: '#0f172a',
+                        light: '#f8fafc',
+                        conflict: '#f7e7e6',
+                        conflictDark: '#f1d4d3',
+                        gold: '#ffd700',
+                        success: '#10b981',
+                        fadedRed: '#fff9f9'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'display': ['Playfair Display', 'serif']
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                        'bounce-slow': 'bounce 3s infinite',
+                        'pulse-slow': 'pulse 3s infinite',
+                        'wiggle': 'wiggle 1s ease-in-out infinite',
+                        'zoom': 'zoom 0.5s ease-out'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased bg-white overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300" id="navbar">
+        <div class="bg-white/80 backdrop-blur-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex items-center space-x-3">
+                        <div class="logo w-12 h-12 flex items-center justify-center">
+                            <img src="Acetiyo_logo-removebg.png" alt="logo">
+                        </div>
+                        <div>
+                            <span class="font-display text-2xl font-bold gradient-text">AceTiyo</span>
+                            <div class="text-xs text-gray-500">LTD</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hidden lg:flex items-center space-x-8">
+                        <a href="index.html" class="text-gray-700  hover:text-primary font-semibold transition-all duration-300 hover:scale-105">Home</a>
+                        <a href="about.html" class="text-gray-700 hover:text-primary font-semibold transition-all duration-300 hover:scale-105">About</a>
+                        <a href="services.html" class="text-gray-700 hover:text-primary font-semibold transition-all duration-300 hover:scale-105">Services</a>
+                        <a href="enrollment.html" class="text-gray-700 hover:text-primary font-semibold transition-all duration-300 hover:scale-105">Enrollment</a>
+                        <a href="pricing.html" class="text-gray-700 hover:text-primary font-semibold transition-all duration-300 hover:scale-105">Pricing</a>
+                        <a href="contact.html" class="text-gray-700 hover:text-primary font-semibold transition-all duration-300 hover:scale-105">Contact</a>
+                    </div>
+                    
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="https://wa.me/254718239608?text=Hello%20Acetiyo,%20I%20was%20visiting%20your%20website%20and%20...." 
+                    class="flex items-center space-x-2 text-green-600 hover:text-green-700 transition-all duration-300 hover:scale-105 bg-green-50 px-3 py-2 rounded-lg" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                        <i class="ri-whatsapp-fill text-xl"></i>
+                        <span class="font-semibold">WhatsApp</span>
+                    </a>
+
+                    <button onclick="window.location.href='enrollment.html#enroll'" 
+                        class="cta-button text-white px-8 py-3 rounded-xl font-bold text-lg shadow-lg">
+                        Enroll Now
+                    </button>
+                </div>
+
+                    
+                    <button class="lg:hidden" id="mobile-menu-btn">
+                        <i class="ri-menu-line text-2xl text-gray-700"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden glass" id="mobile-menu">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block px-3 py-3 text-gray-700 hover:text-primary font-semibold">Home</a>
+                <a href="about.html" class="block px-3 py-3 text-gray-700 hover:text-primary font-semibold">About</a>
+                <a href="services.html" class="block px-3 py-3 text-gray-700 hover:text-primary font-semibold">Services</a>
+                <a href="enrollment.html" class="block px-3 py-3 text-gray-700 hover:text-primary font-semibold">Enrollment</a>
+                <a href="pricing.html" class="block px-3 py-3 text-gray-700 hover:text-primary font-semibold">Pricing</a>
+                <a href="contact.html" class="block px-3 py-3 text-gray-700 hover:text-primary font-semibold">Contact</a>
+                <div class="pt-4 border-t border-gray-200">
+                    <a href="https://wa.me/254718239608?text=Hello%20Acetiyo,%20I%20was%20visiting%20your%20website%20and%20...." class="flex items-center space-x-2 px-3 py-3 text-green-600">
+                        <i class="ri-whatsapp-fill text-xl"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <button onclick="window.location.href='enrollment.html#enroll'" 
+                        class="cta-button text-white px-8 py-3 rounded-xl font-bold text-lg shadow-lg">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section class="hero-bg min-h-[70vh] flex items-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-transparent"></div>
+    <div class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+        <div class="text-center">
+            <div data-aos="fade-up">
+                <!-- Optional Tagline Badge -->
+                <div class="inline-flex items-center space-x-2 bg-white/20 text-white px-6 py-3 rounded-full text-sm font-bold mb-6">
+                    <i class="ri-school-fill text-gold"></i>
+                    <span>Fast & Easy Enrollment</span>
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="text-4xl lg:text-6xl font-display font-bold text-white mb-6">
+                    Start Your Academic <span class="text-black">Journey</span>
+                </h1>
+
+                <!-- Description -->
+                <p class="text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-8">
+                    Complete your enrollment in minutes and unlock comprehensive academic management services that guarantee success.
+                </p>
+
+                <!-- Breadcrumbs -->
+                <div class="flex justify-center items-center gap-2 text-white/80 text-sm mb-8">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <span class="mx-1">•</span>
+                    <span class="text-conflictDark">Enrollment</span>
+                </div>
+
+                <!-- Key Points (matching style) -->
+                <div class="flex flex-wrap justify-center items-center gap-8 text-white/80">
+                    <div class="flex items-center space-x-2">
+                        <i class="ri-check-double-line text-success text-xl"></i>
+                        <span class="font-semibold">Quick Sign-Up</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="ri-lock-line text-gold text-xl"></i>
+                        <span class="font-semibold">Secure Process</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="ri-time-line text-secondary text-xl"></i>
+                        <span class="font-semibold">Start Immediately</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Enrollment Form Section -->
+    <section class="py-20 bg-fadedRed from-light to-white" id="enroll">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl lg:text-5xl font-display font-bold text-dark mb-6">
+                    <span class="gradient-text">Complete</span> Your Enrollment
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Join hundreds of successful students who chose AceTiyo for their academic journey
+                </p>
+            </div>
+
+            <!-- Progress Indicator -->
+            <div class="mb-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex justify-center items-center space-x-4 mb-4">
+                    <div class="step-indicator active w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold" data-step="1">1</div>
+                    <div class="w-16 h-1 bg-gray-300"></div>
+                    <div class="step-indicator w-10 h-10 rounded-full bg-gray-300 text-gray-600 flex items-center justify-center font-bold" data-step="2">2</div>
+                    <div class="w-16 h-1 bg-gray-300"></div>
+                    <div class="step-indicator w-10 h-10 rounded-full bg-gray-300 text-gray-600 flex items-center justify-center font-bold" data-step="3">3</div>
+                    <div class="w-16 h-1 bg-gray-300"></div>
+                    <div class="step-indicator w-10 h-10 rounded-full bg-gray-300 text-gray-600 flex items-center justify-center font-bold" data-step="4">4</div>
+                </div>
+                <div class="bg-gray-300 h-2 rounded-full">
+                    <div class="progress-bar h-2 rounded-full" style="width: 25%"></div>
+                </div>
+                <div class="text-center mt-2 text-gray-600 font-medium" id="progress-text">Step 1 of 4: Personal Information</div>
+            </div>
+
+            <!-- Enrollment Form -->
+            <div class="enrollment-form p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                <form id="enrollmentForm">
+                    <!-- Step 1: Personal Information -->
+                    <div class="form-step active" id="step1">
+                        <h3 class="text-2xl font-bold text-dark mb-6">Personal Information</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">First Name *</label>
+                                <input type="text" name="firstName" class="form-input w-full px-4 py-3 rounded-lg" placeholder="Enter your first name" required>
+                                <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Last Name *</label>
+                                <input type="text" name="lastName" class="form-input w-full px-4 py-3 rounded-lg" placeholder="Enter your last name" required>
+                                <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Email Address *</label>
+                                <input type="email" name="email" class="form-input w-full px-4 py-3 rounded-lg" placeholder="your.email@example.com" required>
+                                <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Phone Number *</label>
+                                <input type="tel" name="phone" class="form-input w-full px-4 py-3 rounded-lg" placeholder="e.g., +1 (555) 123-4567" required>
+                                <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Date of Birth *</label>
+                                <input type="date" name="dateOfBirth" class="form-input w-full px-4 py-3 rounded-lg" required>
+                                <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Country *</label>
+                                <select name="country" class="form-input w-full px-4 py-3 rounded-lg" required>
+                                    <option value="">Select your country</option>
+                                    <option value="United States">United States</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="France">France</option>
+                                    <option value="Italy">Italy</option>
+                                    <option value="Spain">Spain</option>
+                                    <option value="Netherlands">Netherlands</option>
+                                    <option value="Sweden">Sweden</option>
+                                    <option value="Norway">Norway</option>
+                                    <option value="Denmark">Denmark</option>
+                                    <option value="Switzerland">Switzerland</option>
+                                    <option value="Austria">Austria</option>
+                                    <option value="Belgium">Belgium</option>
+                                    <option value="Ireland">Ireland</option>
+                                    <option value="New Zealand">New Zealand</option>
+                                    <option value="Japan">Japan</option>
+                                    <option value="South Korea">South Korea</option>
+                                    <option value="Singapore">Singapore</option>
+                                    <option value="Hong Kong">Hong Kong</option>
+                                    <option value="UAE">United Arab Emirates</option>
+                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                    <option value="Qatar">Qatar</option>
+                                    <option value="Kuwait">Kuwait</option>
+                                    <option value="Israel">Israel</option>
+                                    <option value="South Africa">South Africa</option>
+                                    <option value="Kenya">Kenya</option>
+                                    <option value="Uganda">Uganda</option>
+                                    <option value="Tanzania">Tanzania</option>
+                                    <option value="Rwanda">Rwanda</option>
+                                    <option value="Nigeria">Nigeria</option>
+                                    <option value="Ghana">Ghana</option>
+                                    <option value="Egypt">Egypt</option>
+                                    <option value="Morocco">Morocco</option>
+                                    <option value="India">India</option>
+                                    <option value="China">China</option>
+                                    <option value="Thailand">Thailand</option>
+                                    <option value="Malaysia">Malaysia</option>
+                                    <option value="Indonesia">Indonesia</option>
+                                    <option value="Philippines">Philippines</option>
+                                    <option value="Vietnam">Vietnam</option>
+                                    <option value="Brazil">Brazil</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Chile">Chile</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Mexico">Mexico</option>
+                                    <option value="Costa Rica">Costa Rica</option>
+                                    <option value="Panama">Panama</option>
+                                    <option value="Jamaica">Jamaica</option>
+                                    <option value="Bahamas">Bahamas</option>
+                                    <option value="Barbados">Barbados</option>
+                                    <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                    <option value="Russia">Russia</option>
+                                    <option value="Poland">Poland</option>
+                                    <option value="Czech Republic">Czech Republic</option>
+                                    <option value="Hungary">Hungary</option>
+                                    <option value="Romania">Romania</option>
+                                    <option value="Bulgaria">Bulgaria</option>
+                                    <option value="Croatia">Croatia</option>
+                                    <option value="Slovenia">Slovenia</option>
+                                    <option value="Slovakia">Slovakia</option>
+                                    <option value="Estonia">Estonia</option>
+                                    <option value="Latvia">Latvia</option>
+                                    <option value="Lithuania">Lithuania</option>
+                                    <option value="Finland">Finland</option>
+                                    <option value="Iceland">Iceland</option>
+                                    <option value="Portugal">Portugal</option>
+                                    <option value="Greece">Greece</option>
+                                    <option value="Cyprus">Cyprus</option>
+                                    <option value="Malta">Malta</option>
+                                    <option value="Luxembourg">Luxembourg</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <label class="block text-gray-700 font-semibold mb-2">Address</label>
+                            <textarea name="address" class="form-input w-full px-4 py-3 rounded-lg" rows="3" placeholder="Enter your full address"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Academic Background -->
+                    <div class="form-step" id="step2">
+                        <h3 class="text-2xl font-bold text-dark mb-6">Academic Background</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Current Education Level *</label>
+                                <input type="text" name="gradeLevel" class="form-input w-full px-4 py-3 rounded-lg" placeholder="e.g., 9th Grade, High School Senior, College Freshman" required>
+                                <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Previous School Type *</label>
+                                <select name="previousSchoolType" class="form-input w-full px-4 py-3 rounded-lg" required>
+                                    <option value="">Select school type</option>
+                                    <option value="Public School">Public School</option>
+                                    <option value="Private School">Private School</option>
+                                    <option value="Homeschool">Homeschool</option>
+                                    <option value="Online School">Online School</option>
+                                    <option value="International School">International School</option>
+                                </select>
+                                <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                            </div>
+                            <div class="md:col-span-2">
+                                <label class="block text-gray-700 font-semibold mb-2">Previous School Name</label>
+                                <input type="text" name="previousSchoolName" class="form-input w-full px-4 py-3 rounded-lg" placeholder="Enter your previous school name">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Expected Graduation Year *</label>
+                                <select name="graduationYear" class="form-input w-full px-4 py-3 rounded-lg" required>
+                                    <option value="">Select year</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                </select>
+                                <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">GPA (if available)</label>
+                                <input type="text" name="gpa" class="form-input w-full px-4 py-3 rounded-lg" placeholder="e.g., 3.5 or A-">
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <label class="block text-gray-700 font-semibold mb-2">Special Academic Needs or Accommodations</label>
+                            <textarea name="academicNeeds" class="form-input w-full px-4 py-3 rounded-lg" rows="3" placeholder="Describe any special accommodations needed"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Service Selection -->
+                    <div class="form-step" id="step3">
+                        <h3 class="text-2xl font-bold text-dark mb-6">Choose Your Package</h3>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div class="package-card p-6 rounded-xl" data-package="full-management">
+                                <div class="flex items-center justify-between mb-4">
+                                    <h4 class="text-xl font-bold text-dark">Full Academic Management</h4>
+                                    <div class="text-2xl font-bold text-primary">$3,500</div>
+                                </div>
+                                <p class="text-gray-600 mb-4">Complete ownership of your academic journey</p>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li class="flex items-center space-x-2">
+                                        <i class="ri-check-line text-primary"></i>
+                                        <span>Comprehensive graduation requirement guidance</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i class="ri-check-line text-primary"></i>
+                                        <span>Real-time credit tracking</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i class="ri-check-line text-primary"></i>
+                                        <span>Daily learning support included</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i class="ri-check-line text-primary"></i>
+                                        <span>College pathway preparation</span>
+                                    </li>
+                                </ul>
+                                <input type="radio" name="selectedPackage" value="Full Academic Management - $3,500" class="hidden">
+                            </div>
+                            <div class="package-card p-6 rounded-xl" data-package="basic-support">
+                                <div class="flex items-center justify-between mb-4">
+                                    <h4 class="text-xl font-bold text-dark">Basic Support Package</h4>
+                                    <div class="text-2xl font-bold text-secondary">$1,500</div>
+                                </div>
+                                <p class="text-gray-600 mb-4">Essential support for independent learners</p>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li class="flex items-center space-x-2">
+                                        <i class="ri-check-line text-secondary"></i>
+                                        <span>Monthly progress reviews</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i class="ri-check-line text-secondary"></i>
+                                        <span>Email support</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i class="ri-check-line text-secondary"></i>
+                                        <span>Basic graduation planning</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i class="ri-check-line text-secondary"></i>
+                                        <span>Resource access</span>
+                                    </li>
+                                </ul>
+                                <input type="radio" name="selectedPackage" value="Basic Support Package - $1,500" class="hidden">
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <label class="block text-gray-700 font-semibold mb-2">Additional Services (Optional)</label>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <label class="flex items-center space-x-3 p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                                    <input type="checkbox" name="additionalServices" value="SAT Preparation - $60/hour" class="text-primary">
+                                    <span>SAT Preparation ($60/hour)</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                                    <input type="checkbox" name="additionalServices" value="AP Classes - $295/credit" class="text-primary">
+                                    <span>AP Classes ($295/credit)</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                                    <input type="checkbox" name="additionalServices" value="Sports Agency Services" class="text-primary">
+                                    <span>Sports Agency Services</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 border rounded-lg hover:bg-gray-50 cursor-pointer">
+                                    <input type="checkbox" name="additionalServices" value="NCAA Eligibility Support" class="text-primary">
+                                    <span>NCAA Eligibility Support</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Additional Information -->
+                    <div class="form-step" id="step4">
+                        <h3 class="text-2xl font-bold text-dark mb-6">Additional Information</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Parent/Guardian Name *</label>
+                                <input type="text" name="parentName" class="form-input w-full px-4 py-3 rounded-lg" placeholder="Full name of parent/guardian" required>
+                                <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Parent/Guardian Email *</label>
+                                <input type="email" name="parentEmail" class="form-input w-full px-4 py-3 rounded-lg" placeholder="parent@example.com" required>
+                                <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Parent/Guardian Phone *</label>
+                                <input type="tel" name="parentPhone" class="form-input w-full px-4 py-3 rounded-lg" placeholder="+1 (555) 123-4567" required>
+                                <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">How did you hear about AceTiyo?</label>
+                                <select name="referralSource" class="form-input w-full px-4 py-3 rounded-lg">
+                                    <option value="">Select source</option>
+                                    <option value="Google Search">Google Search</option>
+                                    <option value="Social Media">Social Media</option>
+                                    <option value="Friend/Family Referral">Friend/Family Referral</option>
+                                    <option value="Educational Website">Educational Website</option>
+                                    <option value="Advertisement">Advertisement</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Goals and Expectations</label>
+                                <textarea name="goals" class="form-input w-full px-4 py-3 rounded-lg" rows="4" placeholder="Tell us about your academic goals, career aspirations, and what you hope to achieve with AceTiyo's services..."></textarea>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Specific Challenges or Concerns</label>
+                                <textarea name="challenges" class="form-input w-full px-4 py-3 rounded-lg" rows="3" placeholder="Any specific academic challenges, learning difficulties, or concerns you'd like us to address..."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Terms and Conditions -->
+                        <div class="mt-8 p-6 bg-gray-50 rounded-lg">
+                            <h4 class="text-lg font-bold text-dark mb-4">Terms and Conditions</h4>
+                            <div class="space-y-4 text-sm text-gray-600">
+                                <label class="flex items-start space-x-3 cursor-pointer">
+                                    <input type="checkbox" name="agreementTerms" value="true" class="mt-1 text-primary" required>
+                                    <span>I agree to the <a href="terms.html#service" class="text-primary hover:underline">Terms of Service</a> and <a href="terms.html#privacy" class="text-primary hover:underline">Privacy Policy</a> of AceTiyo LTD.</span>
+                                </label>
+                                <label class="flex items-start space-x-3 cursor-pointer">
+                                    <input type="checkbox" name="agreementPayment" value="true" class="mt-1 text-primary" required>
+                                    <span>I understand the payment terms and fee structure for the selected services.</span>
+                                </label>
+                                <label class="flex items-start space-x-3 cursor-pointer">
+                                    <input type="checkbox" name="agreementCommunication" value="true" class="mt-1 text-primary" required>
+                                    <span>I consent to receive communication from AceTiyo LTD regarding my enrollment and academic services via email, phone, and messaging platforms.</span>
+                                </label>
+                                <label class="flex items-start space-x-3 cursor-pointer">
+                                    <input type="checkbox" name="agreementMarketing" value="true" class="mt-1 text-primary">
+                                    <span>I would like to receive promotional offers and updates about AceTiyo services (optional).</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <div class="flex justify-between mt-8">
+                        <button type="button" id="prevBtn" class="px-8 py-3 bg-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-400 transition-colors" style="display: none;">
+                            Previous
+                        </button>
+                        <button type="button" id="nextBtn" class="px-8 py-3 cta-button text-white rounded-lg font-semibold">
+                            Next Step
+                        </button>
+                        <button type="submit" id="submitBtn" class="px-8 py-3 cta-button text-white rounded-lg font-semibold" style="display: none;">
+                            <span class="submit-text">Complete Enrollment</span>
+                            <div class="loading-spinner hidden"></div>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+        <footer class="bg-dark text-white py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="logo w-12 h-12 flex items-center justify-center">
+                            <img src="Acetiyo logo.png" alt="logo">
+                        </div>
+                        <div>
+                            <span class="font-display text-2xl font-bold gradient-text">AceTiyo</span>
+                            <div class="text-xs text-gray-400">LTD</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">Premier affiliate of accredited American online schools, architecting academic success for students worldwide.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-gold">Services</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="services.html" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">Academic Management</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">Daily Learning Support</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">College Preparation</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">NCAA Eligibility</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">Sports Agency</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-gold">Company</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">About Us</a></li>
+                        <li><a href="enrollment.html" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">How It Works</a></li>
+                        <li><a href="pricing.html" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">Pricing</a></li>
+                        <li><a href="#success-stories" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">Success Stories</a></li>
+                        <li><a href="contact.html#contact" class="hover:text-white transition-colors hover:translate-x-1 transform duration-200 inline-block">Contact Form</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-gold">Contact</h3>
+                    <div class="space-y-4 text-gray-400">
+                        <div class="flex items-center space-x-3 group cursor-pointer">
+                            <i class="ri-whatsapp-fill text-green-500 text-xl group-hover:scale-110 transition-transform"></i>
+                            <div>
+                                <div class="group-hover:text-white transition-colors">+254 718 239 608</div>
+                                <div class="text-xs">Available 24/7</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 group">
+                            <i class="ri-mail-line text-primary text-xl"></i>
+                            <div>
+                                <div class="group-hover:text-white transition-colors">acetiyocompanyltd@gmail.com</div>
+                                <div class="text-xs">Quick Response</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 group">
+                            <i class="ri-time-line text-accent text-xl"></i>
+                            <div>
+                                <div class="group-hover:text-white transition-colors">Mon-Fri: 8AM-6PM</div>
+                                <div class="text-xs">Sat: 9AM-4PM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="grid md:grid-cols-2 gap-4 items-center">
+                    <p class="text-gray-400 text-sm">© 2025 AceTiyo LTD. All rights reserved.</p>
+                    <div class="flex space-x-6 text-sm text-gray-400 md:justify-end">
+                        <a href="terms.html#privacy" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="terms.html#service" class="hover:text-white transition-colors">Terms of Service</a>
+                        <a href="terms.html#cookies" class="hover:text-white transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+                <div class="mt-4 text-center text-gray-500 text-sm">
+                    Website created by 
+                    <a href="https://techmetris.com" target="_blank" class="style: underline hover:text-white transition-colors">Techmetris Web Designs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Customer Support Button -->
+    <div id="support-wrapper" class="fixed bottom-6 right-6 flex flex-col items-end space-y-2 z-50">
+        <!-- Hidden contact icons -->
+        <a id="call-button" href="tel:+254718239608"
+           class="contact-icon w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg opacity-0 pointer-events-none transform translate-y-4 transition-all duration-300">
+            <i class="ri-phone-line text-xl"></i>
+        </a>
+        <a id="whatsapp-button" href="https://wa.me/+254718239608" target="_blank" rel="noopener noreferrer"
+           class="contact-icon w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg opacity-0 pointer-events-none transform translate-y-4 transition-all duration-300">
+            <i class="ri-whatsapp-line text-xl"></i>
+        </a>
+
+        <!-- Main support button -->
+        <div id="support-button"
+             class="w-14 h-14 bg-primary hover:bg-red-700 rounded-full flex items-center justify-center cursor-pointer shadow-lg transition-all duration-300 hover:scale-110">
+            <i class="ri-headphone-line text-white text-2xl"></i>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" 
+            type="button"
+            class="fixed bottom-24 right-6 w-12 h-12 bg-primary rounded-full items-center justify-center shadow-lg hover:bg-secondary transition-colors z-[9999] cursor-pointer hidden">
+        <i class="ri-arrow-up-line text-white"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
