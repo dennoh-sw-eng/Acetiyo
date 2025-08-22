@@ -11,7 +11,7 @@ function loadEmailJS() {
         const script = document.createElement('script');
         script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
         script.onload = () => {
-            emailjs.init("LUL1XEtV4j6A4FmHb");
+            emailjs.init("5AS5xJqqUR37_Uyzz");
             resolve(window.emailjs);
         };
         script.onerror = reject;
@@ -268,7 +268,7 @@ async function initializeContactForm() {
         
         // Send email via EmailJS
         try {
-            const response = await emailjs.send('service_gxgv9jl', 'template_dtqt67k', templateParams);
+            const response = await emailjs.send('service_ownozxa', 'template_rgrhn4d', templateParams);
             Swal.fire({
                 icon: 'success',
                 title: 'Message Sent!',
@@ -540,7 +540,7 @@ async function initializeEnrollmentForm() {
             };
 
             // Send enrollment email via EmailJS
-            await emailjs.send('service_gxgv9jl', 'template_lzezx87', templateParams);
+            await emailjs.send('service_ownozxa', 'template_8qyd6lm', templateParams);
 
             // Show success message
             Swal.fire({
